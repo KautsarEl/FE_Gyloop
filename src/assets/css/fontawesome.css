@@ -1,0 +1,739 @@
+/*
+* Added fontawesome V 5.14.0
+* Changed by : Dery Hananto
+* Date: 2025-01-30
+*/
+
+@font-face {
+    font-family: "fontawesome-regular";
+    src: url('../fonts/fontawesome/fa-regular-400.eot');
+    src: url('../fonts/fontawesome/fa-regular-400.eot') format('embedded-opentype'), 
+    url("../fonts/fontawesome/fa-regular-400.woff2") format("woff2"),
+    url("../fonts/fontawesome/fa-regular-400.woff") format("woff"),
+    url('../fonts/fontawesome/fa-regular-400.ttf') format('truetype'),
+    url('../fonts/fontawesome/fa-regular-400.svg') format('svg');
+    font-display: swap;
+  
+  }
+
+  @font-face {
+    font-family: "fontawesome-regular-small";
+    src: url('../fonts/fontawesome/fa-regular-400.eot');
+    src: url('../fonts/fontawesome/fa-regular-400.eot') format('embedded-opentype'), 
+    url("../fonts/fontawesome/fa-regular-400.woff2") format("woff2"),
+    url("../fonts/fontawesome/fa-regular-400.woff") format("woff"),
+    url('../fonts/fontawesome/fa-regular-400.ttf') format('truetype'),
+    url('../fonts/fontawesome/fa-regular-400.svg') format('svg');
+    font-display: swap;
+  
+  }  
+
+  @font-face {
+    font-family: "fontawesome-solid";
+    src: url('../fonts/fontawesome/fa-solid-900.eot');
+    src: url('../fonts/fontawesome/fa-solid-900.eot') format('embedded-opentype'), 
+    url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2"),
+    url("../fonts/fontawesome/fa-solid-900.woff") format("woff"),
+    url('../fonts/fontawesome/fa-solid-900.ttf') format('truetype'),
+    url('../fonts/fontawesome/fa-solid-900.svg') format('svg');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "fontawesome-light";
+    src: url('../fonts/fontawesome/fa-light-300.eot');
+    src: url('../fonts/fontawesome/fa-light-300.eot') format('embedded-opentype'), 
+    url("../fonts/fontawesome/fa-light-300.woff2") format("woff2"),
+    url("../fonts/fontawesome/fa-light-300.woff") format("woff"),
+    url('../fonts/fontawesome/fa-light-300.ttf') format('truetype'),
+    url('../fonts/fontawesome/fa-light-300.svg') format('svg');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "fontawesome-brands";
+    src: url('../fonts/fontawesome/fa-brands-400.eot');
+    src: url('../fonts/fontawesome/fa-brands-400.eot') format('embedded-opentype'), 
+    url("../fonts/fontawesome/fa-brands-400.woff2") format("woff2"),
+    url("../fonts/fontawesome/fa-brands-400.woff") format("woff"),
+    url('../fonts/fontawesome/fa-brands-400.ttf') format('truetype'),
+    url('../fonts/fontawesome/fa-brands-400.svg') format('svg');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "fontawesome-duotone";
+    src: url('../fonts/fontawesome/fa-duotone-900.eot');
+    src: url('../fonts/fontawesome/fa-duotone-900.eot') format('embedded-opentype'), 
+    url("../fonts/fontawesome/fa-duotone-900.woff2") format("woff2"),
+    url("../fonts/fontawesome/fa-duotone-900.woff") format("woff"),
+    url('../fonts/fontawesome/fa-duotone-900.ttf') format('truetype'),
+    url('../fonts/fontawesome/fa-duotone-900.svg') format('svg');
+    font-display: swap;
+  }
+
+
+  @font-face {
+    font-family: "fontawesome-sharp-light";
+    src: url('../fonts/fontawesome/fa-regular-400.eot');
+    src: url('../fonts/fontawesome/fa-regular-400.eot') format('embedded-opentype'), 
+    url("../fonts/fontawesome/fa-sharp-light-300.woff2") format("woff2"),
+    url('../fonts/fontawesome/fa-sharp-light-300.ttf') format('truetype');
+    font-display: swap;
+  }
+ 
+  [class^="far-"], [class*=" far-"] {
+    font-family: 'fontawesome-regular' !important;
+    font-size: 1.2em !important;
+    font-style: normal;
+    font-size-adjust: unset;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [class^="fars-"], [class*=" fars-"] {
+    font-family: 'fontawesome-regular-small' !important;
+    font-size: 1em !important;
+    font-style: normal;
+    font-size-adjust: unset;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [class^="fas-"], [class*=" fas-"] {
+    font-family: 'fontawesome-solid' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [class^="fal-"], [class*=" fal-"] {
+    font-family: 'fontawesome-light' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [class^="fab-"], [class*=" fab-"] {
+    font-family: 'fontawesome-brands' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [class^="fad-"], [class*=" fad-"] {
+    font-family: 'fontawesome-duotone' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* .far-lg { font-size: 1.3333em !important;; line-height: 0.75em; vertical-align: -.0667em; }
+  .far-xl { font-size: 1.5em !important; line-height: 0.6666em; vertical-align: -.075em; }
+  .far-xxs { font-size: .5em !important; }
+  .far-xs { font-size: .75em !important; }
+  .far-sm { font-size: .875em !important }
+  .far-1x { font-size: 1em !important; }
+  .far-2x { font-size: 2em !important; }
+  .far-3x { font-size: 3em !important; }
+  .far-4x { font-size: 4em !important; }
+  .far-5x { font-size: 5em !important; }
+  .far-6x { font-size: 6em !important;}
+  .far-7x { font-size: 7em !important; }
+  .far-8x { font-size: 8em !important; }
+  .far-9x { font-size: 9em !important; }
+  .far-10x { font-size: 10em !important; }
+  .far-fw { text-align: center; width: 1.25em; } */
+
+  /*icon: store*/
+  .far-store:before { content: "\f54e"; }
+  .fas-store:before { content: "\f54e"; }
+  .fal-store:before { content: "\f54e"; }
+  /*icon:globe-pointer*/
+  .far-globe-pointer:before { content: "\e60e"; }
+  .fas-globe-pointer:before { content: "\e60e"; }
+  .fal-globe-pointer:before { content: "\e60e"; }
+  /*icon: structure*/
+  .far-sitemap:before { content: "\f0e8"; }
+  .fas-sitemap:before { content: "\f0e8"; }
+  .fal-sitemap:before { content: "\f0e8"; }
+  /*icon: box*/
+  .far-box:before { content: "\f466"; }
+  .fas-box:before { content: "\f466"; }
+  .fal-box:before { content: "\f466"; }
+  .fars-box:before { content: "\f466"; }
+  /*icon: sack-dollar*/
+  .far-sack-dollar:before { content: "\f81d"; }
+  .fas-sack-dollar:before { content: "\f81d"; }
+  .fal-sack-dollar:before { content: "\f81d"; }
+  /*icon: ticket*/
+  .far-ticket:before { content: "\f145"; }
+  .fas-ticket:before { content: "\f145"; }
+  .fal-ticket:before { content: "\f145"; }
+  /*icon: handshake*/
+  .far-handshake:before { content: "\f2b5"; }
+  .fas-handshake:before { content: "\f2b5"; }
+  .fal-handshake:before { content: "\f2b5"; }
+  /*icon: bullhorn*/
+  .far-bullhorn:before { content: "\f0a1"; }
+  .fas-bullhorn:before { content: "\f0a1"; }
+  .fal-bullhorn:before { content: "\f0a1"; }
+  /*icon: stopwatch*/
+  .far-stopwatch:before { content: "\f2f2"; }
+  .fas-stopwatch:before { content: "\f2f2"; }
+  .fal-stopwatch:before { content: "\f2f2"; }
+  /*icon: filter-circle-dollar*/
+  .far-filter-circle-dollar:before { content: "\f662"; }
+  .fas-filter-circle-dollar:before { content: "\f662"; }
+  .fal-filter-circle-dollar:before { content: "\f662"; }
+  /*icon: circle-dollar*/
+  .far-circle-dollar:before { content: "\f2e8"; }
+  .fas-circle-dollar:before { content: "\f2e8"; }
+  .fal-circle-dollar:before { content: "\f2e8"; }
+  /*icon: truck-fast*/
+  .far-truck-fast:before { content: "\f48b"; }
+  .fas-truck-fast:before { content: "\f48b"; }
+  .fal-truck-fast:before { content: "\f48b"; }
+  /*icon: file-invoice-dollar*/
+  .far-file-invoice-dollar:before { content: "\f571"; }
+  .fas-file-invoice-dollar:before { content: "\f571"; }
+  .fal-file-invoice-dollar:before { content: "\f571"; }
+  /*icon: user-headset*/
+  .far-user-headset:before { content: "\f82d"; }
+  .fas-user-headset:before { content: "\f82d"; }
+  .fal-user-headset:before { content: "\f82d"; }
+  /*icon: face-smile*/
+  .far-face-smile:before { content: "\f118"; }
+  .fas-face-smile:before { content: "\f118"; }
+  .fal-face-smile:before { content: "\f118"; }
+  /*icon: coins*/
+  .far-coins:before { content: "\f51e"; }
+  .fas-coins:before { content: "\f51e"; }
+  .fal-coins:before { content: "\f51e"; }
+  /*icon: chart-mixed*/
+  .far-chart-mixed:before { content: "\f643"; }
+  .fas-chart-mixed:before { content: "\f643"; }
+  .fal-chart-mixed:before { content: "\f643"; }
+  /*icon: address-book*/
+  .far-address-book:before { content: "\f2b9"; }
+  .fas-address-book:before { content: "\f2b9"; }
+  .fal-address-book:before { content: "\f2b9"; }
+  /*icon: link*/
+  .far-link:before { content: "\f0c1"; }
+  .fas-link:before { content: "\f0c1"; }
+  .fal-link:before { content: "\f0c1"; }
+  /*icon: people-group*/
+  .far-people-group:before { content: "\e533"; }
+  .fas-people-group:before { content: "\e533"; }
+  .fal-people-group:before { content: "\e533"; }
+  /*icon: calendar-heart*/
+  .far-calendar-heart:before { content: "\e0d3"; }
+  .fas-calendar-heart:before { content: "\e0d3"; }
+  .fal-calendar-heart:before { content: "\e0d3"; }
+  /*icon: clipboard-list-check*/
+  .far-clipboard-list-check:before { content: "\f737"; }
+  .fas-clipboard-list-check:before { content: "\f737"; }
+  .fal-clipboard-list-check:before { content: "\f737"; }
+  .fars-clipboard-list-check:before { content: "\f737"; }
+  /*icon: square-check*/
+  .far-square-check:before { content: "\f14a"; }
+  .fas-square-check:before { content: "\f14a"; }
+  .fal-square-check:before { content: "\f14a"; }
+  /*icon: envelope*/
+  .far-envelope:before { content: "\f0e0"; }
+  .fas-envelope:before { content: "\f0e0"; }
+  .fal-envelope:before { content: "\f0e0"; }
+  /*icon: message-smile*/
+  .far-message-smile:before { content: "\f4aa"; }
+  .fas-message-smile:before { content: "\f4aa"; }
+  .fal-message-smile:before { content: "\f4aa"; }
+  /*incon: comment-dollar*/
+  .far-comment-dollar:before { content: "\f651"; }
+  .fas-comment-dollar:before { content: "\f651"; }
+  .fal-comment-dollar:before { content: "\f651"; }
+  /*icon: hand-point-up*/
+  .far-comment-dollar:before { content: "\f651"; }
+  .fas-comment-dollar:before { content: "\f651"; }
+  .fal-comment-dollar:before { content: "\f651"; }
+  /*icon: cart-shopping*/
+  .far-cart-shopping:before { content: "\f07a"; }
+  .fas-cart-shopping:before { content: "\f07a"; }
+  .fal-cart-shopping:before { content: "\f07a"; }
+  /*icon: magnifying-glass-location*/
+  .far-magnifying-glass-location:before { content: "\f689"; }
+  .fas-magnifying-glass-location:before { content: "\f689"; }
+  .fal-magnifying-glass-location:before { content: "\f689"; }
+  /*icon: list-radio*/
+  .far-list-radio:before { content: "\e1d0"; }
+  .fas-list-radio:before { content: "\e1d0"; }
+  .fal-list-radio:before { content: "\e1d0"; }
+  /*icon: pen-ruler*/
+  .far-pen-ruler:before { content: "\f5ae"; }
+  .fas-pen-ruler:before { content: "\f5ae"; }
+  .fal-pen-ruler:before { content: "\f5ae"; }
+  /*icon: hand-point-up*/
+  .far-hand-point-up:before { content: "\f0a6"; }
+  .fas-hand-point-up:before { content: "\f0a6"; }
+  .fal--hand-point-up:before { content: "\f0a6"; }
+  /*icon: forklift*/
+  .far-forklift:before { content: "\f47a"; }
+  .fas-forklift:before { content: "\f47a"; }
+  .fal-forklift:before { content: "\f47a"; }
+  /*icon: warehouse*/
+  .far-warehouse:before { content: "\f494"; }
+  .fas-warehouse:before { content: "\f494"; }
+  .fal-warehouse:before { content: "\f494"; }
+  /*icon: hand-holding-heart*/
+  .far-hand-holding-heart:before { content: "\f4be"; }
+  .fas-hand-holding-heart:before { content: "\f4be"; }
+  .fal-hand-holding-heart:before { content: "\f4be"; }
+  /*icon: hand*/
+  .far-hand:before { content: "\f256"; }
+  .fas-hand:before { content: "\f256"; }
+  .fal-hand:before { content: "\f256"; }
+  /*icon: boxes-stacked*/
+  .far-boxes-stacked:before { content: "\f468"; }
+  .fas-boxes-stacked:before { content: "\f468"; }
+  .fal-boxes-stacked:before { content: "\f468"; }
+  /*icon: user-gear*/
+  .far-user-gear:before { content: "\f4fe"; }
+  .fas-user-gear:before { content: "\f4fe"; }
+  .fal-user-gear:before { content: "\f4fe"; }
+  /*icon: gear-code*/
+  .far-gear-code:before { content: "\e5e8"; }
+  .fas-gear-code:before { content: "\e5e8"; }
+  .fal-gear-code:before { content: "\e5e8"; }
+  /*icon: grid-2*/
+  .far-grid-2:before { content: "\e196"; }
+  .fas-grid-2:before { content: "\e196"; }
+  .fal-grid-2:before { content: "\e196"; }
+  /*icon: building*/
+  .far-building:before { content: "\f1ad"; }
+  .fas-building:before { content: "\f1ad"; }
+  .fal-building:before { content: "\f1ad"; }
+  /*icon: crown*/
+  .far-crown:before { content: "\f521"; }
+  .fas-crown:before { content: "\f521"; }
+  .fal-crown:before { content: "\f521"; }
+  /*icon: users-gear*/
+  .far-users-gear:before { content: "\f509"; }
+  .fas-users-gear:before { content: "\f509"; }
+  .fal-users-gear:before { content: "\f509"; }
+  /*icon: shield-check*/
+  .far-shield-check:before { content: "\f2f7"; }
+  .fas-shield-check:before { content: "\f2f7"; }
+  .fal-shield-check:before { content: "\f2f7"; }
+  /*icon: gear*/
+  .far-gear:before { content: "\f013"; }
+  .fas-gear:before { content: "\f013"; }
+  .fal-gear:before { content: "\f013"; }
+  /*icon: building-magnifying-glass*/
+  .far-building-magnifying-glass:before { content: "\e61c"; }
+  .fas-building-magnifying-glass:before { content: "\e61c"; }
+  .fal-building-magnifying-glass:before { content: "\e61c"; }
+  /*icon: box-open*/
+  .far-box-open:before { content: "\f49e"; }
+  .fas-box-open:before { content: "\f49e"; }
+  .fal-box-open:before { content: "\f49e"; }
+  /*icon: heart*/
+  .far-heart:before { content: "\f004"; }
+  .fas-heart:before { content: "\f004"; }
+  .fal-heartbefore { content: "\f004"; }
+  /*icon: arrow-progress*/
+  .far-arrow-progress:before { content: "\e5df"; }
+  .fas-arrow-progress:before { content: "\e5df"; }
+  .fal-arrow-progress:before { content: "\e5df"; }
+  /*icon: diagram-project*/
+  .far-diagram-project:before { content: "\f542"; }
+  .fas-diagram-project:before { content: "\f542"; }
+  .fal-diagram-project:before { content: "\f542"; }
+  /*icon: pen-to-square*/
+  .far-pen-to-square:before { content: "\f044"; }
+  .fas-pen-to-square:before { content: "\f044"; }
+  .fal-pen-to-square:before { content: "\f044"; }
+  /*icon: paint-roller*/
+  .far-paint-roller:before { content: "\f5aa"; }
+  .fas-paint-roller:before { content: "\f5aa"; }
+  .fal-paint-roller:before { content: "\f5aa"; }
+  /*icon: envelope-open-text*/
+  .far-envelope-open-text:before { content: "\f658"; }
+  .fas-envelope-open-text:before { content: "\f658"; }
+  .fal-envelope-open-text:before { content: "\f658"; }
+  /*icon: file-invoice*/
+  .far-file-invoice:before { content: "\f570"; }
+  .fas-file-invoice:before { content: "\f570"; }
+  .fal-file-invoice:before { content: "\f570"; }
+  /*icon: arrow-right-arrow-left*/
+  .far-arrow-right-arrow-left:before { content: "\f0ec"; }
+  .fas-arrow-right-arrow-left:before { content: "\f0ec"; }
+  .fal-arrow-right-arrow-left:before { content: "\f0ec"; }
+  /*icon: triangle-exclamation*/
+  .far-triangle-exclamation:before { content: "\f071"; }
+  .fas-triangle-exclamation:before { content: "\f071"; }
+  .fal-triangle-exclamation:before { content: "\f071"; }
+  /*icon: chart-network*/
+  .far-chart-network:before { content: "\f78a"; }
+  .fas-chart-network:before { content: "\f78a"; }
+  .fal-chart-network:before { content: "\f78a"; }
+  /*icon: palette*/
+  .far-palette:before { content: "\f53f"; }
+  .fas-palette:before { content: "\f53f"; }
+  .fal-palette:before { content: "\f53f"; }
+  .fars-palette:before { content: "\f53f"; }
+  /*icon: signature-lock*/
+  .far-signature-lock:before { content: "\e3ca"; }
+  .fas-signature-lock:before { content: "\e3ca"; }
+  .fal-signature-lock:before { content: "\e3ca"; }
+  /*icon: house-heart*/
+  .far-house-heart:before { content: "\f4c9"; }
+  .fas-house-heart:before { content: "\f4c9"; }
+  .fal-house-heart:before { content: "\f4c9"; }
+  /*icon: chevron-right*/
+  .far-chevron-right:before { content: "\f054"; }
+  .fas-chevron-right:before { content: "\f054"; }
+  .fal-chevron-right:before { content: "\f054"; }
+  /*icon: apartment*/
+  .far-apartment:before { content: "\e468"; }
+  .fas-apartment:before { content: "\e468"; }
+  .fal-apartment:before { content: "\e468"; }
+  /*icon: square-check*/
+  .far-square-check:before { content: "\f14a"; }
+  .fas-square-check:before { content: "\f14a"; }
+  .fal-square-check:before { content: "\f14a"; }
+  /*icon: square*/
+  .far-square:before { content: "\f0c8"; }
+  .fas-square:before { content: "\f0c8"; }
+  .fal-square:before { content: "\f0c8"; }
+  /*icon: calendar-star*/
+  .far-calendar-star:before { content: "\f736"; }
+  .fas-calendar-star:before { content: "\f736"; }
+  .fal-calendar-star:before { content: "\f736"; }
+  /* icon: glasses */
+  .far-glasses:before {content:"\f530";}
+  .fas-glasses:before {content:"\f530";}
+  .fal-glasses:before {content:"\f530";}
+  .fars-glasses:before {content:"\f530";}
+  /* icon: server */
+  .far-server:before {content:"\f233";}
+  .fas-server:before {content:"\f233";}
+  .fal-server:before {content:"\f233";}
+  /* icon: pen-to-square */
+  .far-pen-to-square:before {content:"\f044";}
+  .fas-pen-to-square:before {content:"\f044";}
+  .fal-pen-to-square:before {content:"\f044";}
+  .fars-pen-to-square:before {content:"\f044";}
+  /* icon: excel */
+  .far-file-excel:before {content:"\f1c3";}
+  .fas-file-excel:before {content:"\f1c3";}
+  .fal-file-excel:before {content:"\f1c3";}
+  .fars-file-excel:before {content:"\f1c3";}
+  /* icon: cloud-arrow-down */
+  .far-cloud-arrow-down:before {content:"\f0ed";}
+  .fas-cloud-arrow-down:before {content:"\f0ed";}
+  .fal-cloud-arrow-down:before {content:"\f0ed";}
+  .fars-cloud-arrow-down:before {content:"\f0ed";}
+  /* icon: color-palette */
+  .far-color-palette:before {content:"\f53f";}
+  .fas-color-palette:before {content:"\f53f";}
+  .fal-color-palette:before {content:"\f53f";}
+  .fars-color-palette:before {content:"\f53f";}
+  /* icon: layer-group */
+  .far-layer-group:before {content:"\f5fd";}
+  .fas-layer-group:before {content:"\f5fd";}
+  .fal-layer-group:before {content:"\f5fd";}
+  .fars-layer-group:before {content:"\f5fd";}
+  /* icon: sort-amount-up */
+  .far-sort-amount-up:before {content:"\f161";}
+  .fas-sort-amount-up:before {content:"\f161";}
+  .fal-sort-amount-up:before {content:"\f161";}
+  .fars-sort-amount-up:before {content:"\f161";}
+  /* icon: sort-amount-down */
+  .far-sort-amount-down:before {content:"\f160";}
+  .fas-sort-amount-down:before {content:"\f160";}
+  .fal-sort-amount-down:before {content:"\f160";}
+  .fars-sort-amount-down:before {content:"\f160";}
+  /* icon: filter */
+  .far-filter:before {content:"\f0b0";}
+  .fas-filter:before {content:"\f0b0";}
+  .fal-filter:before {content:"\f0b0";}
+  .fars-filter:before {content:"\f0b0";}
+  /* icon: file-spreadsheet*/
+  .far-file-spreadsheet:before {content:"\f65b";}
+  .fas-file-spreadsheet:before {content:"\f65b";}
+  .fal-file-spreadsheet:before {content:"\f65b";}
+  .fars-file-spreadsheet:before {content:"\f65b";}
+  /* icon: database*/
+  .far-database:before {content:"\f1c0";}
+  .fas-database:before {content:"\f1c0";}
+  .fal-fdatabase:before {content:"\f1c0";}
+  .fars-database:before {content:"\f1c0";}
+  /* icon: lightbulb-on*/
+  .far-lightbulb-on:before {content:"\f672";}
+  .fas-lightbulb-on:before {content:"\f672";}
+  .fal-lightbulb-on:before {content:"\f672";}
+  .fars-lightbulb-on:before {content:"\f672";}
+  /*icon : receipt*/
+  .far-receipt:before {content:"\f543";}
+  .fas-receipt:before {content:"\f543";}
+  .fal-receipt:before {content:"\f543";}
+  .fars-receipt:before {content:"\f543";}
+  /*icon : check*/
+  .far-check:before {content:"\f00c";}
+  .fas-check:before {content:"\f00c";}
+  .fal-check:before {content:"\f00c";}
+  .fars-check:before {content:"\f00c";}
+  /*icon: square-plus*/
+  .far-square-plus:before {content:"\f0fe";}
+  .fas-square-plus:before {content:"\f0fe";}
+  .fal-square-plus:before {content:"\f0fe";}
+  .fars-square-plus:before {content:"\f0fe";}
+  /*icon: circle-info*/
+  .far-circle-info:before {content:"\f05a";}
+  .fas-circle-info:before {content:"\f05a";}
+  .fal-circle-info:before {content:"\f05a";}
+  .fars-circle-info:before {content:"\f05a";}
+  /*icon: circle-xmark*/
+  .far-circle-xmark:before {content:"\f057";}
+  .fas-circle-xmark:before {content:"\f057";}
+  .fal-circle-xmark:before {content:"\f057";}
+  .fars-circle-xmark:before {content:"\f057";}
+  /*icon: file-pdf*/
+  .far-file-pdf:before {content:"\f1c1";}
+  .fas-file-pdf:before {content:"\f1c1";}
+  .fal-file-pdf:before {content:"\f1c1";}
+  .fars-file-pdf:before {content:"\f1c1";}
+  /*icon: file-lines*/
+  .far-file-lines:before {content:"\f15c";}
+  .fas-file-lines:before {content:"\f15c";}
+  .fal-file-lines:before {content:"\f15c";}
+  .fars-file-lines:before {content:"\f15c";}
+  /*icon: xmark*/
+  .far-xmark:before {content:"\f00d";}
+  .fas-xmark:before {content:"\f00d";}
+  .fal-xmark:before {content:"\f00d";}
+  .fars-xmark:before {content:"\f00d";}
+  /*icon: ellipsis-vertical*/
+  .far-ellipsis-vertical:before {content:"\f142";}
+  .fas-ellipsis-vertical:before {content:"\f142";}
+  .fal-ellipsis-vertical:before {content:"\f142";}
+  .fars-ellipsis-vertical:before {content:"\f142";}
+  /*icon: ellipsis*/
+  .far-ellipsis:before {content:"\f141";}
+  .fas-ellipsis:before {content:"\f141";}
+  .fal-ellipsis:before {content:"\f141";}
+  .fars-ellipsis:before {content:"\f141";}
+  /*icon: print*/
+  .far-print:before {content:"\f02f";}
+  .fas-print:before {content:"\f02f";}
+  .fal-print:before {content:"\f02f";}
+  .fars-print:before {content:"\f02f";}
+  /*icon: share*/
+  .far-share:before {content:"\f1e0";}
+  .fas-share:before {content:"\f1e0";}
+  .fal-share:before {content:"\f1e0";}
+  .fars-share:before {content:"\f1e0";}
+  /*icon: lock*/
+  .far-lock:before {content:"\f023";}
+  .fas-lock:before {content:"\f023";}
+  .fal-lock:before {content:"\f023";}
+  .fars-lock:before {content:"\f023";}
+  /*icon: trash*/
+  .far-trash:before {content:"\f2ed";}
+  .fas-trash:before {content:"\f2ed";}
+  .fal-trash:before {content:"\f2ed";}
+  .fars-trash:before {content:"\f2ed";}
+  /*icon: chevron-right*/
+  .far-chevron-right:before {content:"\f054";}
+  .fas-chevron-right:before {content:"\f054";}
+  .fal-chevron-right:before {content:"\f054";}
+  .fars-chevron-right:before {content:"\f054";}
+  /*icon: chevron-left*/
+  .far-chevron-left:before {content:"\f053";}
+  .fas-chevron-left:before {content:"\f053";}
+  .fal-chevron-left:before {content:"\f053";}
+  .fars-chevron-left:before {content:"\f053";}
+  /*icon: chevron-down*/
+  .far-chevron-down:before {content:"\f078";}
+  .fas-chevron-down:before {content:"\f078";}
+  .fal-chevron-down:before {content:"\f078";}
+  .fars-chevron-down:before {content:"\f078";}
+  /*icon: chevron-up*/
+  .far-chevron-up:before {content:"\f077";}
+  .fas-chevron-up:before {content:"\f077";}
+  .fal-chevron-up:before {content:"\f077";}
+  .fars-chevron-up:before {content:"\f077";}
+  /*icon: pin*/
+  .far-pin:before {content:"\f08d";}
+  .fas-pin:before {content:"\f08d";}
+  .fal-pin:before {content:"\f08d";}
+  .fars-pin:before {content:"\f08d";}
+  /*icon: expand*/
+  .far-expand:before {content:"\f31d";}
+  .fas-expand:before {content:"\f31d";}
+  .fal-expand:before {content:"\f31d";}
+  .fars-expand:before {content:"\f31d";}
+  /*icon: filter-list*/
+  .far-filter-list:before {content:"\e17c";}
+  .fas-filter-list:before {content:"\e17c";}
+  .fal-filter-list:before {content:"\e17c";}
+  .fars-filter-list:before {content:"\e17c";}
+  /*icon: brush*/
+  .far-brush:before {content:"\f55d";}
+  .fas-brush:before {content:"\f55d";}
+  .fal-brush:before {content:"\f55d";}
+  .fars-brush:before {content:"\f55d";}
+  /*icon: circle-check*/
+  .far-circle-check:before {content:"\f058";}
+  .fas-circle-check:before {content:"\f058";}
+  .fal-circle-check:before {content:"\f058";}
+  .fars-circle-check:before {content:"\f058";}
+  /*icon: file-invoice-dollar*/
+  .far-file-invoice-dollar:before {content:"\f571";}
+  .fas-file-invoice-dollar:before {content:"\f571";}
+  .fal-file-invoice-dollar:before {content:"\f571";}
+  .fars-file-invoice-dollar:before {content:"\f571";}
+  /*icon: bell*/
+  .far-bell:before {content:"\f0f3";}
+  .fas-bell:before {content:"\f0f3";}
+  .fal-bell:before {content:"\f0f3";}
+  .fars-bell:before {content:"\f0f3";}
+  /*icon: hand-holding-box*/
+  .far-hand-holding-box:before {content:"\f47b";}
+  .fas-hand-holding-box:before {content:"\f47b";}
+  .fal-hand-holding-box:before {content:"\f47b";}
+  .fars-hand-holding-box:before {content:"\f47b";}
+  /*icon: dolly*/
+  .far-dolly:before {content:"\f472";}
+  .fas-dolly:before {content:"\f472";}
+  .fal-dolly:before {content:"\f472";}
+  .fars-dolly:before {content:"\f472";}
+  /*icon: calendar-check*/
+  .far-calendar-check:before {content:"\f274";}
+  .fas-calendar-check:before {content:"\f274";}
+  .fal-calendar-check:before {content:"\f274";}
+  .fars-calendar-check:before {content:"\f274";}
+  /*icon: truck-loading*/
+  .far-truck-loading:before {content:"\f4de";}
+  .fas-truck-loading:before {content:"\f4de";}
+  .fal-truck-loading:before {content:"\f4de";}
+  .fars-truck-loading:before {content:"\f4de";}
+  /*icon: dolly-flatbed*/
+  .far-dolly-flatbed:before {content:"\f474";}
+  .fas-dolly-flatbed:before {content:"\f474";}
+  .fal-dolly-flatbed:before {content:"\f474";}
+  .fars-dolly-flatbed:before {content:"\f474";}
+  /*icon: flag*/
+  .far-flag:before {content:"\f024";}
+  .fas-flag:before {content:"\f024";}
+  .fal-flag:before {content:"\f024";}
+  .fars-flag:before {content:"\f024";}
+  /*icon: truck*/
+  .far-truck:before {content:"\f0d1";}
+  .fas-truck:before {content:"\f0d1";}
+  .fal-truck:before {content:"\f0d1";}
+  .fars-truck:before {content:"\f0d1";}
+  /*icon: map-marker-check*/
+  .far-map-marker-check:before {content:"\f606";}
+  .fas-map-marker-check:before {content:"\f606";}
+  .fal-map-marker-check:before {content:"\f606";}
+  .fars-map-marker-check:before {content:"\f606";}
+  /*icon: truck-tramp*/
+  .far-truck-tramp:before {content:"\f4e0";}
+  .fas-truck-tramp:before {content:"\f4e0";}
+  .fal-truck-tramp:before {content:"\f4e0";}
+  .fars-truck-tramp:before {content:"\f4e0";}
+  /*icon: flag-checkered*/
+  .far-flag-checkered:before {content:"\f11e";}
+  .fas-flag-checkered:before {content:"\f11e";}
+  .fal-flag-checkered:before {content:"\f11e";}
+  .fars-flag-checkered:before {content:"\f11e";}
+  /*icon: clipboard-check*/
+  .far-clipboard-check:before {content:"\f46c";}
+  .fas-clipboard-check:before {content:"\f46c";}
+  .fal-clipboard-check:before {content:"\f46c";}
+  .fars-clipboard-check:before {content:"\f46c";}
+  /*icon: clipboard-list-check*/
+  .far-clipboard-list-check:before {content:"\f737";}
+  .fas-clipboard-list-check:before {content:"\f737";}
+  .fal-clipboard-list-check:before {content:"\f737";}
+  .fars-clipboard-list-check:before {content:"\f737";}
+  /*icon: calendar-star*/
+  .far-calendar-star:before {content:"\f736";}
+  .fas-calendar-star:before {content:"\f736";}
+  .fal-calendar-star:before {content:"\f736";}
+  .fars-calendar-star:before {content:"\f736";}
+  /*icon: file-pen*/
+  .far-file-pen:before {content:"\f31c";}
+  .fas-file-pen:before {content:"\f31c";}
+  .fal-file-pen:before {content:"\f31c";}
+  .fars-file-pen:before {content:"\f31c";}
+  /*icon: table-layout*/
+  .far-table-layout:before {content:"\e290";}
+  .fas-table-layout:before {content:"\e290";}
+  .fal-table-layout:before {content:"\e290";}
+  .fars-table-layout:before {content:"\e290";}
+  /*icon: paste*/
+  .far-paste:before {content:"\f0ea";}
+  .fas-paste:before {content:"\f0ea";}
+  .fal-paste:before {content:"\f0ea";}
+  .fars-paste:before {content:"\f0ea";}
+  /*icon: bullhorn*/
+  .far-bullhorn:before {content:"\f0a1";}
+  .fas-bullhorn:before {content:"\f0a1";}
+  .fal-bullhorn:before {content:"\f0a1";}
+  .fars-bullhorn:before {content:"\f0a1";}
+  /*icon: star*/
+  .far-star:before {content:"\f005";}
+  .fas-star:before {content:"\f005";}
+  .fal-star:before {content:"\f005";}
+  .fars-star:before {content:"\f005";}
+  /*icon: square-poll-vertical*/
+  .far-square-poll-vertical:before {content:"\f681";}
+  .fas-square-poll-vertical:before {content:"\f681";}
+  .fal-square-poll-vertical:before {content:"\f681";}
+  .fars-square-poll-vertical:before {content:"\f681";}
+  /*icon: rectangle-history*/
+  .far-rectangle-history:before {content:"\e4a2";}
+  .fas-rectangle-history:before {content:"\e4a2";}
+  .fal-rectangle-history:before {content:"\e4a2";}
+  .fars-rectangle-history:before {content:"\e4a2";}
+  /*icon: grip*/
+  .far-grip:before {content:"\f58d";}
+  .fas-grip:before {content:"\f58d";}
+  .fal-grip:before {content:"\f58d";}
+  .fars-grip:before {content:"\f58d";}
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+
+

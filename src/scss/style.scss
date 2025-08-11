@@ -1,0 +1,524 @@
+/*!
+Template Name: Dashbyte - Premium Admin & Dashboard Template
+Author: Themepixels
+Version: 1.0.0
+Website: http://themepixels.me/demo/dashbyte
+Contact: themepixels@gmail.com
+*/
+
+// Tailwind CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+
+// Variables & Mixins
+@import "variables";
+@import "mixins";
+
+// Bootstrap Framework
+@import "bootstrap/scss/bootstrap";
+
+// Components
+@import "components/accordion";
+@import "components/alerts";
+@import "components/avatars";
+@import "components/badge";
+@import "components/breadcrumbs";
+@import "components/buttons";
+@import "components/card";
+@import "components/dropdown";
+@import "components/images";
+@import "components/list-group";
+@import "components/markers";
+@import "components/modal";
+@import "components/nav";
+@import "components/offcanvas";
+@import "components/pagination";
+@import "components/popovers";
+@import "components/progress";
+@import "components/toasts";
+@import "components/tables";
+@import "components/forms";
+
+// Panels
+@import "panels/header";
+@import "panels/sidebar";
+@import "panels/sidebar-prime";
+@import "panels/sidebar-dark";
+@import "panels/main";
+
+// Dashboard
+@import "dashboard/sales";
+@import "dashboard/analytics";
+@import "dashboard/crypto";
+@import "dashboard/finance";
+@import "dashboard/helpdesk";
+@import "dashboard/events";
+@import "dashboard/storage";
+@import "dashboard/product";
+
+// Apps
+@import "apps/app";
+@import "apps/file-manager";
+@import "apps/email";
+@import "apps/chat";
+@import "apps/contact";
+@import "apps/calendar";
+@import "apps/tasks";
+@import "apps/music";
+@import "apps/video";
+
+// Pages
+@import "pages/user";
+@import "pages/auth";
+@import "pages/error";
+@import "pages/other";
+@import "pages/docs";
+@import "pages/landing";
+
+// Plugins
+@import "plugins/scrollbar";
+@import "plugins/gridjs";
+@import "plugins/select2";
+@import "plugins/tagsinput";
+@import "plugins/rangeslider";
+@import "plugins/jqueryui";
+@import "plugins/colorpicker";
+@import "plugins/wizards";
+@import "plugins/parsley";
+@import "plugins/prismjs";
+@import "plugins/quill";
+@import "plugins/leaflet";
+@import "plugins/vmap";
+@import "plugins/react-datepicker";
+
+// Utilities
+@import "utils";
+
+// Skin
+@import "dark";
+
+//tailwind
+// @import "tailwindcss";
+
+
+.Row-SystemId{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    @media screen and (max-width: 500px) {
+        grid-template-columns: 1fr;
+      }
+}
+
+.form-label-custom{
+    color: #989898;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.react-select-custom .css-13cymwt-control{
+    border-color: #e2e5ec;
+}
+.is-invalid .css-13cymwt-control{
+    border-color: #eb305a
+}
+.is-invalid .css-t3ipsp-control, .is-invalid .css-t3ipsp-control:hover{
+    border-color: #eb305a;
+    box-shadow: 0 0 0 1px #eb305a;
+}
+.react-select-server .css-13cymwt-control{
+    border-color: #ccd2da;
+}
+
+.custom-table{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.custom-table .table tbody tr th, .custom-table .table tbody tr td {
+    background-color: transparent;
+}
+
+.button-action{
+    width: 100%;
+    z-index: 900;
+    height: $height-header;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 24px;
+    transition: all 0.25s;
+    box-shadow: 1px 1px 30px 3px rgba(33, 40, 48, 0.07)
+}
+.custom-form-control{
+    width: 100%;
+}
+@media (min-width: 1440px) {
+    .custom-form-control{
+        width: 50%;
+    }
+}
+@media (max-width: 1024px) {
+    .custom-form-control{
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .custom-form-control{
+        width: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .custom-form-control{
+        width:100%;
+    }
+}
+
+.header-table-custom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-table-custom{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header-table-custom .form-search{
+    background-color: #f3f5f9;
+    width: 100%;
+}
+.header-table-custom .form-search .form-control{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.css-16xfy0z-control, .css-13cymwt-control, .react-select-form .css-t3ipsp-control{
+    height: 33px !important;
+    min-height: 0px !important;
+}
+.react-select-server .css-13cymwt-control, .react-select-server .css-t3ipsp-control{
+    height: 36px !important;
+    min-height: 0px !important;
+}
+.css-1wy0on6{
+    height: 100% !important;
+}
+.css-olqui2-singleValue, .css-1dimb5e-singleValue{
+    margin-bottom: 3px;
+}
+.gridjs-search{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+}
+.gridjs-search-input{
+    width: 250px;
+}
+.css-1jqq78o-placeholder{
+    margin-bottom: 3px !important;
+}
+
+.value-table{
+    min-width:200px;
+    margin: 0px;
+}
+
+.scrollbar-custom{
+    height: 100%;
+    overflow: auto;
+    ::-webkit-scrollbar {
+        width: 5px !important;
+        height: 5px !important;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: white !important;
+        border-radius: 5px !important;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background-color: #D7D7D7 !important;
+        border-radius: 5px !important;
+      }
+}
+.btn-action-table{
+    border:1px solid #ccd2da;
+    background: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    color: #41505f;
+}
+.btn-action-table:hover{
+    background: #f8f9fc;
+}
+
+@media (min-width:500px){
+    .header-table-custom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-table-custom .form-search{
+        background-color: #f3f5f9;
+        width: 200px;
+    }
+}
+.search-action-table{
+    border: 1px solid #ccd2da;
+    border-radius: 4px;
+    height: 35px;
+    width: 100%;
+    color: #41505f;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 32px;
+    &:hover, &:focus{
+        background: #f8f9fc;
+    }
+}
+.icon-search-table-action{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+.container-action-table{
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.value-dropdown{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 8px 8px;
+    cursor: pointer;
+    position: relative;
+}
+.value-dropdown:hover{
+    background: #eaedf4;
+}
+.custom-dropdown.dropdown-menu{
+    background: white;
+    padding: 8px 0px;
+}
+.custom-dropdown-table.dropdown-menu{
+    background: white;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px 1px;
+}
+.option-active{
+    position: absolute;
+    right: 10px;
+    color: #0070d0;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+  
+  .PhoneInputCountryIcon--border{
+    box-shadow: none !important;
+  }
+  .PhoneInputCountryIcon{
+    width: 20px !important;
+    height: 12.5px !important;
+    padding-bottom: 17px;
+  }
+  .PhoneInputCountry {
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.PhoneInputCountrySelect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.PhoneInput{
+    display: flex;
+    align-items: center;
+}
+.PhoneInputInput {
+    outline: 0;
+    color: #000;
+    margin-left: 15px;
+    border-radius: 4px;
+    border :1px solid #e2e5ec;
+    display: flex;
+    align-items: center;
+    height: 33px;
+    padding: 0px;
+    width: 0px;
+    visibility: hidden;
+    &:hover{
+        border-color: #e2e5ec;
+    }
+    &:focus{
+        border-color: #2684ff;
+        box-shadow:  0 0 1px #2684ff
+    }
+}
+.PhoneInputCountry select:disabled{
+    opacity: 0;
+}
+.PhoneInput--disabled input{
+    background: hsl(0, 0%, 95%);
+    color:hsl(0, 0%, 60%);
+}
+.popover-custom{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px 1px;
+    background: white;;
+    border: 0px;
+    border-radius: 4px;
+    min-width: 385px;
+    ::-webkit-scrollbar {
+        width: 5px !important;
+        height: 5px !important;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: white !important;
+        border-radius: 5px !important;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background-color: #D7D7D7 !important;
+        border-radius: 5px !important;
+      }
+}
+.navlink-custom .nav-link{
+    color: #b5b3b3 !important;
+    font-weight: bold;
+}
+.navlink-custom .nav-link.active{
+    color: #0070d0 !important;
+    font-weight: bold;
+}
+.css-1jqq78o-placeholder{
+    color: hsl(0, 0%, 60%) !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.form-switch{ 
+    .form-check-input{
+        width: 46px;
+        height: 23px;
+    }
+}
+
+.swiper-button-disabled .imgColor-disabled {
+    color: rgb(176, 176, 176)
+}
+.imgColor-disabled {color: #0070d0;}
+.img-tags{
+    @include shadow-dreamy(darken($gray-400, 3%));
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 1px;
+}
+.special-label{
+    display: none;
+}
+.custom-reactPhone{
+    .react-tel-input{
+        .form-control{
+            width: 55px;
+            background-color: #f8f9fc;
+            border-top-right-radius:0px ;
+            border-bottom-right-radius:0px ;
+        }
+        .form-control:disabled{
+            background-color: #f8f9fc;
+        }
+    }
+}
+.custom-reactPhone{
+    .input-group{
+        .form-control{
+            border-top-left-radius:0px ;
+            border-bottom-left-radius:0px ;
+            border-left: 0px;
+        }
+    }
+}
+
+.shadow-custom{
+    @include shadow-dreamy(darken($gray-400, 3%));
+}
+
+.height-custom-fixed{
+    min-height: calc(100vh - 250px);
+}
+
+.disabled .form-check-input:checked{
+    background-color: #d3d1d1;
+    border-color: #bebebe;
+    cursor: not-allowed;
+}
+
+.custom-toast .toast{
+    background: white;
+    position: absolute;
+    z-index: 10;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 30%;
+    height: 300px;
+}
+.custom-toast-deleted .toast{
+    background: #93ea98;
+    color:white;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -100%);
+    width: fit-content;
+    text-wrap: nowrap;
+    top: 0;
+    height: fit-content;
+    border: none;
+    padding: 0px 10px;
+}
+.modal.show .modal-dialog{
+    height: calc(100vh - 60px) !important;
+}

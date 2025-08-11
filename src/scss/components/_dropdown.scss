@@ -1,0 +1,28 @@
+.dropdown-menu {
+  border-color: rgba($gray-700, .16);
+  padding: 8px 0px;
+}
+
+.dropdown-item {
+  padding: 5px 10px;
+  // border-radius: 3px;
+  color: inherit;
+  &:hover{
+    background-color: #e0ecfc !important;
+  }
+}
+
+.dropdown-header {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 11px;
+  font-family: $ff-secondary;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.dropdown-divider {
+  border-top-color: $gray-300;
+  opacity: 1;
+  margin: 5px 0;
+}
